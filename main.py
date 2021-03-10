@@ -36,11 +36,11 @@ def predictions(name, desc, req):
 
 
 if __name__ == '__main__':
-    predictions('c:\\tmp\\total_yard_percentage_scope_2.csv', 'Full yard occupancy percentage - OPA',
-                'http://localhost:5009/api/CreateModelWithTrainingData?consumerId=FULL_YARD_PREDICTION_PERCENTAGE_GEMLIK')
-    predictions('c:\\tmp\\total_yard_percentage_scope_4.csv', 'Full yard occupancy percentage - GEBZE',
-                'http://localhost:5009/api/CreateModelWithTrainingData?consumerId=FULL_YARD_PREDICTION_PERCENTAGE_GEMLIK')
-    predictions('c:\\tmp\\total_yard_percentage_scope_5.csv', 'Full yard occupancy percentage - GEMLIK',
-                 'http://localhost:5009/api/CreateModelWithTrainingData?consumerId=FULL_YARD_PREDICTION_PERCENTAGE_GEMLIK')
+    predictions('./resources/total_yard_percentage_scope_4.csv', 'Full yard occupancy percentage - GEBZE',
+                'http://localhost:5009/api/CreateModelWithTrainingData?consumerId=FULL_YARD_PREDICTION_PERCENTAGE')
+    predictions('./resources/total_yard_percentage_scope_2.csv', 'Full yard occupancy percentage - OPA',
+                'http://localhost:5009/api/CreateModelWithTrainingData?consumerId=FULL_YARD_PREDICTION_PERCENTAGE')
+    predictions('./resources/total_yard_percentage_scope_5.csv', 'Full yard occupancy percentage - GEMLIK',
+                 'http://localhost:5009/api/CreateModelWithTrainingData?consumerId=FULL_YARD_PREDICTION_PERCENTAGE')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
